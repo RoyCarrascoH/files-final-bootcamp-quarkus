@@ -1,0 +1,2865 @@
+{
+	"info": {
+		"_postman_id": "346e0f3c-c03b-4707-bec7-6509cfb86770",
+		"name": "BootcampQuarkus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7929714"
+	},
+	"item": [
+		{
+			"name": "Bank",
+			"item": [
+				{
+					"name": "Customers",
+					"item": [
+						{
+							"name": "State",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/state",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"state"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/state/15",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"state",
+												"15"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Lima\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerUrl}}/state",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"state"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Lima\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerUrl}}/state/1",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"state",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/state/2",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"state",
+												"2"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "City",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/city",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"city"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/city/26",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"city",
+												"26"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Comas\",\r\n    \"stateId\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerUrl}}/city",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"city"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Comas2\",\r\n    \"stateId\": 5\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerUrl}}/city/2",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"city",
+												"2"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/city/2",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"city",
+												"2"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Address",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/address",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"address"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/address/71",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"address",
+												"71"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"address\": \"calle siempre viva\",\r\n    \"stateId\": 1,\r\n    \"cityId\": 2\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerUrl}}/address",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"address"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"address\": \"calle nunca más\",\r\n    \"stateId\": 3,\r\n    \"cityId\": 4\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerUrl}}/address/5",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"address",
+												"5"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/address/3",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"address",
+												"3"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Document Type",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/documenttype",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"documenttype"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/documenttype/4",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"documenttype",
+												"4"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"description\": \"DNI\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerUrl}}/documenttype",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"documenttype"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"description\": \"DNI\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerUrl}}/documenttype/5",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"documenttype",
+												"5"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/documenttype/5",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"documenttype",
+												"5"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Document",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/document",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"document"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/document/7",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"document",
+												"7"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"serial\": \"78787878\",\r\n    \"documentTypeId\": 4\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerUrl}}/document",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"document"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"serial\": \"12121212\",\r\n    \"documentTypeId\": 4\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerUrl}}/document/7",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"document",
+												"7"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/document/6",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"document",
+												"6"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Natural Person",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/naturalperson",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"naturalperson"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/naturalperson/6",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"naturalperson",
+												"6"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Nombre\",\r\n    \"lastName\": \"Apellido\",\r\n    \"documentId\": 5,\r\n    \"addressId\": 3\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerUrl}}/naturalperson",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"naturalperson"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Nombres\",\r\n    \"lastName\": \"Apellidos\",\r\n    \"documentId\": 5,\r\n    \"addressId\": 3\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerUrl}}/naturalperson/6",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"naturalperson",
+												"6"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost/8080/customers/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"path": [
+												"8080",
+												"customers",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Body Corporate",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/bodycorporate",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"bodycorporate"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/bodycorporate/6",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"bodycorporate",
+												"6"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Nombre\",\r\n    \"documentId\": 5,\r\n    \"addressId\": 3\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerUrl}}/bodycorporate",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"bodycorporate"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"empresa\",\r\n    \"documentId\": 5,\r\n    \"addressId\": 3\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{customerUrl}}/bodycorporate/7",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"bodycorporate",
+												"7"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{customerUrl}}/bodycorporate/7",
+											"host": [
+												"{{customerUrl}}"
+											],
+											"path": [
+												"bodycorporate",
+												"7"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Products",
+					"item": [
+						{
+							"name": "Accounts",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{productUrl}}/accounts",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"accounts"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetAllByCustomerId",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{productUrl}}/accounts?customerId=326",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"accounts"
+											],
+											"query": [
+												{
+													"key": "customerId",
+													"value": "326"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{productUrl}}/accounts/1",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"accounts",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"amount\": 500.00,\r\n    \"customerId\": 380\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{productUrl}}/accounts",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"accounts"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"amount\": 600.00,\r\n    \"cutomerId\": 102,\r\n    \"cardId\": 102\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{productUrl}}/accounts/1",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"accounts",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{productUrl}}/accounts/1",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"accounts",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Credits",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{productUrl}}/credits",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"credits"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetAllByCustomerId",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{productUrl}}/credits?customerId=323",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"credits"
+											],
+											"query": [
+												{
+													"key": "customerId",
+													"value": "323"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{productUrl}}/credits/1",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"credits",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"amount\": 500.00,\r\n    \"customerId\": 383,\r\n    \"balance\":300,\r\n    \"dues\":5,\r\n    \"paymentDueDate\":\"10\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{productUrl}}/credits",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"credits"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"amount\": 600.00,\r\n    \"cutomerId\": 101,\r\n    \"balance\":500,\r\n    \"dues\":6,\r\n    \"paymentDueDate\":\"10\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{productUrl}}/credits/1",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"credits",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{productUrl}}/credits/2",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"credits",
+												"2"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "LineOfCredits",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{productUrl}}/linesofcredit",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"linesofcredit"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetAllByCustomerId",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{productUrl}}/linesofcredit?customerId=323",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"linesofcredit"
+											],
+											"query": [
+												{
+													"key": "customerId",
+													"value": "323"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{productUrl}}/linesofcredit/61",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"linesofcredit",
+												"61"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"amount\": 500.00,\r\n    \"customerId\": 380,\r\n    \"available\":200,\r\n    \"costs\":300,\r\n    \"closingDate\":\"10\",\r\n    \"paymentDueDate\": \"15\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{productUrl}}/linesofcredit",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"linesofcredit"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"amount\": 800.00,\r\n    \"cutomerId\": 101,\r\n    \"available\":400,\r\n    \"costs\":400,\r\n    \"closingDate\":\"11\",\r\n    \"paymentDueDate\": \"14\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{productUrl}}/linesofcredit/1",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"linesofcredit",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{productUrl}}/linesofcredit/2",
+											"host": [
+												"{{productUrl}}"
+											],
+											"path": [
+												"linesofcredit",
+												"2"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Cards",
+					"item": [
+						{
+							"name": "Cards",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{cardUrl}}/cards",
+											"host": [
+												"{{cardUrl}}"
+											],
+											"path": [
+												"cards"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetAllByCustomerId",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{cardUrl}}/cards?customerId=323&cardTypeId=1",
+											"host": [
+												"{{cardUrl}}"
+											],
+											"path": [
+												"cards"
+											],
+											"query": [
+												{
+													"key": "customerId",
+													"value": "323"
+												},
+												{
+													"key": "cardTypeId",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{cardUrl}}/cards/5",
+											"host": [
+												"{{cardUrl}}"
+											],
+											"path": [
+												"cards",
+												"5"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"serial\": \"1234-1234-1234-1236\",\r\n    \"pin\": \"1234\",\r\n    \"month\": 10,\r\n    \"year\": 2025,\r\n    \"cvv\": 123,\r\n    \"customerId\": 101,\r\n    \"productId\": 3,\r\n    \"cardTypeId\": 2\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{cardUrl}}/cards",
+											"host": [
+												"{{cardUrl}}"
+											],
+											"path": [
+												"cards"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"serial\": \"1234-1234-1234-1236\",\r\n    \"pin\": \"1234\",\r\n    \"month\": 10,\r\n    \"year\": 2025,\r\n    \"cvv\": 123,\r\n    \"customerId\": 101,\r\n    \"productId\": 2,\r\n    \"cardTypeId\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{cardUrl}}/cards/3",
+											"host": [
+												"{{cardUrl}}"
+											],
+											"path": [
+												"cards",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{cardUrl}}/cards/5",
+											"host": [
+												"{{cardUrl}}"
+											],
+											"path": [
+												"cards",
+												"5"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CardTypes",
+							"item": [
+								{
+									"name": "GetAll",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{cardUrl}}/cardtypes",
+											"host": [
+												"{{cardUrl}}"
+											],
+											"path": [
+												"cardtypes"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{cardUrl}}/cardtypes/1",
+											"host": [
+												"{{cardUrl}}"
+											],
+											"path": [
+												"cardtypes",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Credit\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{cardUrl}}/cardtypes",
+											"host": [
+												"{{cardUrl}}"
+											],
+											"path": [
+												"cardtypes"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Creditos\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{cardUrl}}/cardtypes/2",
+											"host": [
+												"{{cardUrl}}"
+											],
+											"path": [
+												"cardtypes",
+												"2"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{cardUrl}}/cardtypes/6",
+											"host": [
+												"{{cardUrl}}"
+											],
+											"path": [
+												"cardtypes",
+												"6"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Operations",
+					"item": [
+						{
+							"name": "OperationType",
+							"item": [
+								{
+									"name": "OperationType",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{operationUrl}}/operationtype",
+											"host": [
+												"{{operationUrl}}"
+											],
+											"path": [
+												"operationtype"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Deposit",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\":500.00,\r\n    \"description\":\"\",\r\n    \"sourceAccount\":\"\",\r\n    \"destinationAccount\":1,\r\n    \"operationTypeId\":\"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{operationUrl}}/operation/deposit",
+									"host": [
+										"{{operationUrl}}"
+									],
+									"path": [
+										"operation",
+										"deposit"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Retiro",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\":50.00,\r\n    \"description\":\"\",\r\n    \"sourceAccount\":\"\",\r\n    \"destinationAccount\":1,\r\n    \"operationTypeId\":2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{operationUrl}}/operation/withdrawal",
+									"host": [
+										"{{operationUrl}}"
+									],
+									"path": [
+										"operation",
+										"withdrawal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deposit",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\":500.00,\r\n    \"description\":\"\",\r\n    \"sourceAccount\":\"\",\r\n    \"destinationAccount\":1,\r\n    \"operationTypeId\":\"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{operationUrl}}/operation/deposit?accountId=1",
+									"host": [
+										"{{operationUrl}}"
+									],
+									"path": [
+										"operation",
+										"deposit"
+									],
+									"query": [
+										{
+											"key": "accountId",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Retiro",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\":50.00,\r\n    \"description\":\"\",\r\n    \"sourceAccount\":\"\",\r\n    \"destinationAccount\":1,\r\n    \"operationTypeId\":2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{operationUrl}}/operation/withdrawal?accountId=1",
+									"host": [
+										"{{operationUrl}}"
+									],
+									"path": [
+										"operation",
+										"withdrawal"
+									],
+									"query": [
+										{
+											"key": "accountId",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAll",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\":500.00,\r\n    \"description\":\"\",\r\n    \"sourceAccount\":\"\",\r\n    \"destinationAccount\":1,\r\n    \"operationTypeId\":\"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{operationUrl}}/operation?accountId=2",
+									"host": [
+										"{{operationUrl}}"
+									],
+									"path": [
+										"operation"
+									],
+									"query": [
+										{
+											"key": "accountId",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Transferencia",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\":300.00,\r\n    \"description\":\"\",\r\n    \"sourceAccount\":\"1\",\r\n    \"destinationAccount\":3,\r\n    \"operationTypeId\":3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{operationUrl}}/operation/transfer?accountId=1",
+									"host": [
+										"{{operationUrl}}"
+									],
+									"path": [
+										"operation",
+										"transfer"
+									],
+									"query": [
+										{
+											"key": "accountId",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Transferencia",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\":300.00,\r\n    \"description\":\"\",\r\n    \"sourceAccount\":\"1\",\r\n    \"destinationAccount\":3,\r\n    \"operationTypeId\":3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{operationUrl}}/operation/transfer",
+									"host": [
+										"{{operationUrl}}"
+									],
+									"path": [
+										"operation",
+										"transfer"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Payments",
+					"item": [
+						{
+							"name": "GetAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{paymentUrl}}/payment",
+									"host": [
+										"{{paymentUrl}}"
+									],
+									"path": [
+										"payment"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Payment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\": 150.00,\r\n    \"description\": \"Pago\",\r\n    \"productId\": 31\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{paymentUrl}}/payment",
+									"host": [
+										"{{paymentUrl}}"
+									],
+									"path": [
+										"payment"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Shopping",
+					"item": [
+						{
+							"name": "GetAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{shoppingUrl}}/shopping?productId=61",
+									"host": [
+										"{{shoppingUrl}}"
+									],
+									"path": [
+										"shopping"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "61"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Shopping",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\": 200.00,\r\n    \"description\": \"Pago\",\r\n    \"productId\": 61\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{shoppingUrl}}/shopping",
+									"host": [
+										"{{shoppingUrl}}"
+									],
+									"path": [
+										"shopping"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "MultiChannel",
+			"item": [
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customerId\":\"325\",\r\n    \"password\":\"5555\",\r\n    \"card\":{\r\n        \"serial\":\"1234-1234-1234-7412\",\r\n        \"month\":10,\r\n        \"year\":2025,\r\n        \"cvv\":123\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{usersMultiChannerlUrl}}/users",
+									"host": [
+										"{{usersMultiChannerlUrl}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\":\"5555\",\r\n    \"card\":{\r\n        \"serial\":\"1234-1234-1234-1236\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{usersMultiChannerlUrl}}/users/login",
+									"host": [
+										"{{usersMultiChannerlUrl}}"
+									],
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{usersMultiChannerlUrl}}/users",
+									"host": [
+										"{{usersMultiChannerlUrl}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{usersMultiChannerlUrl}}/users/63f7e39f2f37d26b33dbfb70",
+									"host": [
+										"{{usersMultiChannerlUrl}}"
+									],
+									"path": [
+										"users",
+										"63f7e39f2f37d26b33dbfb70"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Queries",
+					"item": [
+						{
+							"name": "Products",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{queriesMultiChannelUrl}}/query/323",
+									"host": [
+										"{{queriesMultiChannelUrl}}"
+									],
+									"path": [
+										"query",
+										"323"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Accounts",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{queriesMultiChannelUrl}}/query/account/2",
+									"host": [
+										"{{queriesMultiChannelUrl}}"
+									],
+									"path": [
+										"query",
+										"account",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Credits",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{queriesMultiChannelUrl}}/query/credit/31",
+									"host": [
+										"{{queriesMultiChannelUrl}}"
+									],
+									"path": [
+										"query",
+										"credit",
+										"31"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "LineOfCredit",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{queriesMultiChannelUrl}}/query/lineofcredit/61",
+									"host": [
+										"{{queriesMultiChannelUrl}}"
+									],
+									"path": [
+										"query",
+										"lineofcredit",
+										"61"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Wallet",
+			"item": [
+				{
+					"name": "Customer Wallet",
+					"item": [
+						{
+							"name": "register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user\":\"lincei\",\r\n    \"cellphone\":\"986704670\",\r\n    \"password\":\"123456\",\r\n    \"amount\":0,\r\n    \"fullName\":\"Lincei Zanahoria Quito Tena\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8009/customerwallet/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8009",
+									"path": [
+										"customerwallet",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user\":\"rcarrascos\",\r\n    \"password\":\"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8009/customerwallet/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8009",
+									"path": [
+										"customerwallet",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAll",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8009/customerwallet",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8009",
+									"path": [
+										"customerwallet"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8009/customerwallet/63f8d757345af361f4656fda",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8009",
+									"path": [
+										"customerwallet",
+										"63f8d757345af361f4656fda"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateCardId",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cardId\": 33\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8009/customerwallet/card/63f93f218d408c66c8bef862",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8009",
+									"path": [
+										"customerwallet",
+										"card",
+										"63f93f218d408c66c8bef862"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8009/customerwallet/63f8d757345af361f4656fda",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8009",
+									"path": [
+										"customerwallet",
+										"63f8d757345af361f4656fda"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getByCellphone",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8009/customerwallet/cellphone/986704669",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8009",
+									"path": [
+										"customerwallet",
+										"cellphone",
+										"986704669"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateAmount",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\": 10,\r\n    \"operation\": \"Discount\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8009/customerwallet/amount/63f93f218d408c66c8bef862",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8009",
+									"path": [
+										"customerwallet",
+										"amount",
+										"63f93f218d408c66c8bef862"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Operations Wallet",
+					"item": [
+						{
+							"name": "pagoCellphone",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\":10,\r\n    \"originPhone\":\"986704669\",\r\n    \"destinationPhone\":\"986704670\",\r\n    \"description\":\"Pay\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8021/operationwallet/pay",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8021",
+									"path": [
+										"operationwallet",
+										"pay"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "BootCoin",
+			"item": [
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "Users",
+							"item": [
+								{
+									"name": "add",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"documentType\":\"DNI\",\r\n    \"documentNumber\":\"43567563\",\r\n    \"cellphone\":\"986704669\",\r\n    \"email\":\"correo2@prueba.com\",\r\n    \"walletId\":\"63f93f218d408c66c8bef862\",\r\n    \"cardId\":null\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8077/api/users",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8077",
+											"path": [
+												"api",
+												"users"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetAll",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://localhost:8077/api/users",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8077",
+											"path": [
+												"api",
+												"users"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8077/api/users/63fe5095d7bc5f300e2885e8",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8077",
+											"path": [
+												"api",
+												"users",
+												"63fe5095d7bc5f300e2885e8"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "BootCoin",
+					"item": [
+						{
+							"name": "Rate",
+							"item": [
+								{
+									"name": "add",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n   \"rateBuys\":3,\r\n   \"rateSale\":3.5,\r\n   \"state\":false\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8076/api/rate",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8076",
+											"path": [
+												"api",
+												"rate"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetAll",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://localhost:8076/api/rate",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8076",
+											"path": [
+												"api",
+												"rate"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8076/api/rate/63fe3a45568846302fbf6981",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8076",
+											"path": [
+												"api",
+												"rate",
+												"63fe3a45568846302fbf6981"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "BootCoin",
+							"item": [
+								{
+									"name": "addVendedor",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n   \"rateId\":\"63fe60ff17e2543b8c33c6f9\",\r\n   \"salesManId\":\"63fe5fa42bad9126d6ab92eb\",\r\n   \"balance\":0\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8076/api/bootcoin",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8076",
+											"path": [
+												"api",
+												"bootcoin"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetAll",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://localhost:8076/api/bootcoin",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8076",
+											"path": [
+												"api",
+												"bootcoin"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8076/api/bootcoin/63fe619e17e2543b8c33c6fa",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8076",
+											"path": [
+												"api",
+												"bootcoin",
+												"63fe619e17e2543b8c33c6fa"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "updateBalance",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"balance\": 100\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8076/api/bootcoin/balance/63fe619e17e2543b8c33c6fa",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8076",
+											"path": [
+												"api",
+												"bootcoin",
+												"balance",
+												"63fe619e17e2543b8c33c6fa"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "addComprador",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n   \"rateId\":\"63fe60ff17e2543b8c33c6f9\",\r\n   \"salesManId\":\"63fe602a2bad9126d6ab92ec\",\r\n   \"balance\":0\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8076/api/bootcoin",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8076",
+											"path": [
+												"api",
+												"bootcoin"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Movements",
+					"item": [
+						{
+							"name": "BuysBootCoin",
+							"item": [
+								{
+									"name": "add",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n   \"description\":\"Amount\",\r\n   \"amount\":17.5,\r\n   \"paymentType\":\"63fe62502ccb1b59c19aaffc\",\r\n   \"balance\":5,\r\n   \"idSalesMan\":\"63fe619e17e2543b8c33c6fa\",\r\n   \"idBuyerMan\":\"63fe654917e2543b8c33c6fb\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8078/api/buys",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8078",
+											"path": [
+												"api",
+												"buys"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetAll",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://localhost:8078/api/buys",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8078",
+											"path": [
+												"api",
+												"buys"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8078/api/buys/63fe3a45568846302fbf6981",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8078",
+											"path": [
+												"api",
+												"buys",
+												"63fe3a45568846302fbf6981"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "checkPendingByUser",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8078/api/buys/checkpending/63fe619e17e2543b8c33c6fa",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8078",
+											"path": [
+												"api",
+												"buys",
+												"checkpending",
+												"63fe619e17e2543b8c33c6fa"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "checkPendingByUser Copy",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8078/api/buys/acceptpurchase/63fe66212ccb1b59c19aaffe",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8078",
+											"path": [
+												"api",
+												"buys",
+												"acceptpurchase",
+												"63fe66212ccb1b59c19aaffe"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "PaymentType",
+							"item": [
+								{
+									"name": "addDigitalWallet",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n   \"description\":\"DigitalWallet\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8078/api/paymenttype",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8078",
+											"path": [
+												"api",
+												"paymenttype"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetAll",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://localhost:8078/api/paymenttype",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8078",
+											"path": [
+												"api",
+												"paymenttype"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GetById",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8078/api/paymenttype/63fe62272ccb1b59c19aaffb",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8078",
+											"path": [
+												"api",
+												"paymenttype",
+												"63fe62272ccb1b59c19aaffb"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "addTransfer",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n   \"description\":\"Transfer\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8078/api/paymenttype",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8078",
+											"path": [
+												"api",
+												"paymenttype"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "productUrl",
+			"value": "http://localhost:8000",
+			"type": "string"
+		},
+		{
+			"key": "cardUrl",
+			"value": "http://localhost:8001",
+			"type": "string"
+		},
+		{
+			"key": "operationUrl",
+			"value": "http://localhost:8002",
+			"type": "string"
+		},
+		{
+			"key": "customerUrl",
+			"value": "http://localhost:8003",
+			"type": "string"
+		},
+		{
+			"key": "shoppingUrl",
+			"value": "http://localhost:8008",
+			"type": "string"
+		},
+		{
+			"key": "paymentUrl",
+			"value": "http://localhost:8007",
+			"type": "string"
+		},
+		{
+			"key": "usersMultiChannerlUrl",
+			"value": "http://localhost:8004",
+			"type": "string"
+		},
+		{
+			"key": "queriesMultiChannelUrl",
+			"value": "http://localhost:8006",
+			"type": "string"
+		}
+	]
+}
